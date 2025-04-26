@@ -5,7 +5,7 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel
 
 
-def generate_password(length=12):
+def generate_password(length=15):
     password_characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
     password = ''.join(random.choice(password_characters) for i in range(length))
     return password
